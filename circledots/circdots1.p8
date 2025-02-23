@@ -1,6 +1,8 @@
 local c={} -- const
 local g={} -- globals
-function _init()
+circle1={}
+circle1.init = function()
+    printh("loaded circledots 1")
     c.height = 127
     c.width = 127
     c.step = 5
@@ -14,12 +16,12 @@ function _init()
     g.radius,g.radius,g.ring = 0,0,0
 end
 
-function _update()
+circle1.update = function()
     g.radius = g.radius > c.radmax and 0 or g.radius+c.speed
     g.radsqr,g.ring = g.radius*g.radius,c.ring*g.radius
 end
 
-function _draw()
+circle1.draw = function()
     cls()
     local origin={x=63,y=63}
     local r=g.radius
