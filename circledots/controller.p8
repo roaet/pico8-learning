@@ -1,12 +1,14 @@
 
 local controllers={}
 local initNeeded=true
-local ac=2
-local cList={"circ1","circ2"}
+local ac=4
+local cList={"circ1","circ2","circ3","circ4"}
 
 function _init()
     controllers.circ1 = circle1
     controllers.circ2 = circle2
+    controllers.circ3 = circle3
+    controllers.circ4 = circle4
 end
 
 function _update()

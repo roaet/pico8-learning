@@ -15,7 +15,7 @@ circle2.init = function()
     printh("loaded circledots 2")
     c.height = 127
     c.width = 127
-    c.step =1
+    c.step =6
     c.offset = 1
     c.radmax = 90
     c.speed = 3
