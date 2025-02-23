@@ -2,6 +2,8 @@ local c={} -- const
 local g={} -- globals
 circle2={}
 --[[
+Method 2: Geometry
+
 Method 2 works well at all step values and seems to have consistent
 metrics of 0.04.
 

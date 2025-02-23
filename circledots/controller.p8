@@ -1,24 +1,30 @@
 
 local controllers={}
 local initNeeded=true
-local activeController="circ2"
+local ac=2
+local cList={"circ1","circ2"}
 
 function _init()
     controllers.circ1 = circle1
     controllers.circ2 = circle2
 end
 
-function doInit()
-end
-
 function _update()
+    if btnp(0) then
+        ac+=1
+        if ac > #cList then
+            ac = 1
+        end
+        initNeeded=true
+    end
+
     if initNeeded then
-        controllers[activeController].init()
+        controllers[cList[ac]].init()
         initNeeded=false
     end
-    controllers[activeController].update()
+    controllers[cList[ac]].update()
 end
 
 function _draw()
-    controllers[activeController].draw()
+    controllers[cList[ac]].draw()
 end

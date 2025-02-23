@@ -1,7 +1,9 @@
 local c={} -- const
 local g={} -- globals
 circle1={}
---[[
+--[[activeController
+Method 1: Brute Force
+
 Method 1 falls apart at step = 1. Frame skips 100%.
 It can handle step = 2, but only reaches the same 
 performance as method 2 at step = 8 with metrics of 0.05.
