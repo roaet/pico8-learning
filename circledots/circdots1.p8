@@ -1,11 +1,19 @@
 local c={} -- const
 local g={} -- globals
 circle1={}
+--[[
+Method 1 falls apart at step = 1. Frame skips 100%.
+It can handle step = 2, but only reaches the same 
+performance as method 2 at step = 8 with metrics of 0.05.
+
+This has a pixel offset for the grid and the circle.
+Necessary for the effect.
+--]]
 circle1.init = function()
     printh("loaded circledots 1")
     c.height = 127
     c.width = 127
-    c.step = 5
+    c.step = 8
     c.offset = 1
     c.radmax = 90
     c.speed = 3

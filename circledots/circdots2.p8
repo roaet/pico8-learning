@@ -1,11 +1,17 @@
 local c={} -- const
 local g={} -- globals
 circle2={}
+--[[
+Method 2 works well at all step values and seems to have consistent
+metrics of 0.04.
+
+Does not have the pixel offset between grid and circle.
+--]]
 circle2.init = function()
     printh("loaded circledots 2")
     c.height = 127
     c.width = 127
-    c.step = 5
+    c.step =1
     c.offset = 1
     c.radmax = 90
     c.speed = 3
@@ -13,7 +19,7 @@ circle2.init = function()
     c.bgcol = 1
     c.color = 7
 
-    g.radius,g.radius,g.ring = 0,0,0
+    g.radius = 0
 end
 
 circle2.update = function()
