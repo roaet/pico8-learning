@@ -8,6 +8,8 @@ Method 2 works well at all step values and seems to have consistent
 metrics of 0.04.
 
 Does not have the pixel offset between grid and circle.
+
+Makes really accurate circles!!
 --]]
 circle2.init = function()
     printh("loaded circledots 2")

@@ -10,7 +10,7 @@ function _init()
 end
 
 function _update()
-    if btnp(0) then
+    if btnp(4) then
         ac+=1
         if ac > #cList then
             ac = 1
