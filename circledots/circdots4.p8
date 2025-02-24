@@ -6,7 +6,7 @@ Method 4: 1+2 hybrid
 
 draw the background with rects, then put the grid on top brute force
 
-Does have the pixel offset. Has great performance!
+Does have the pixel offset. Has great performance! and makes great circles
 --]]
 circle4.init = function()
     printh("loaded circledots 4")
